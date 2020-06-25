@@ -1,6 +1,6 @@
 # Simon Game 
 
-A self-imposed challenge that I took on to recreate the classical [Simon memory game](https://en.wikipedia.org/wiki/Simon_(game)) using Unity Game Engine. It's a 2D game that consists of just the simon board with it's four colors turned off.
+A self-imposed challenge that I took on to recreate the classic [Simon memory game](https://en.wikipedia.org/wiki/Simon_(game)) using Unity Game Engine. It's a 2D game that consists of just the simon board with it's four colors turned off.
 
 I got a little help from Photoshop to play with the colors in order to make the light on light off effect. The game randomly chooses colors in the beginning that I made sure would not be repetitive by disallowing consecutive same color light on. 
 
