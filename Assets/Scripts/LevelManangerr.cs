@@ -5,6 +5,7 @@ using UnityEngine.UI ;
 
 public class LevelManangerr : MonoBehaviour
 {
+    //A simple scipt to display the percentage of the game complete
     [SerializeField] private Text text ; 
     [SerializeField] private Controller controller ;
     

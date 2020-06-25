@@ -27,6 +27,8 @@ public class Controller : MonoBehaviour
 
     void InitializeGame()
     {
+        //initialize the sequence of lights in the game , the lengh of the sequence is the level number that the
+        //user is on, the higher the level the longer the sequence 
         int rand;
         int temp = 0;
         for (int i = 0; i < level; i++)
@@ -34,6 +36,7 @@ public class Controller : MonoBehaviour
             rand = Random.Range(0, 4);
             while (temp == rand)
             {
+                //make sure the lights do not repeat in sequence
                 rand = Random.Range(0, 4);
             }
             names[i] = buttons[rand].tag;
@@ -43,6 +46,8 @@ public class Controller : MonoBehaviour
     }
     IEnumerator InitializeLights()
     {
+        //blink the lights based on the sequence generated with InitializeGame() with a small delay between 
+        //each blink 
         yield return new WaitForSeconds(1);
         for (int i = 0; i < names.Length; i++)
         {
@@ -77,6 +82,7 @@ public class Controller : MonoBehaviour
 
     private IEnumerator LightsFlash(GameObject button)
     {
+        //switch between the buttonON and buttonOff images to mimick a light blinking
         button.SetActive(true);
         yield return new WaitForSeconds(0.2f);
         button.SetActive(false);
@@ -84,7 +90,8 @@ public class Controller : MonoBehaviour
 
     void CheckClicks()
     {
-
+        //check if the user clicked on the lights and if the light the user clicked on is not the right
+        //one in sequence the game over panel will be displayed to inform the user that she/he has lost
         if (Input.GetMouseButtonDown(0))
         {
             Vector2 worldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);

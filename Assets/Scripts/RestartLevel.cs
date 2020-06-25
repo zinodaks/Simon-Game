@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class RestartLevel : MonoBehaviour
 {
-     private Scene scene ;
+    //Restarting a level or quiting the game 
+    private Scene scene ;
    
     void Start()
     {
