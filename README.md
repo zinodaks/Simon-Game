@@ -8,6 +8,8 @@ The players objective is to retain the color sequence that the game generates an
 
 The game is won when the player reaches the 20th level which is very difficult level to reach.
 
-I was able to grasp the concept of [Coroutines in Unity](https://docs.unity3d.com/Manual/Coroutines.html) by creating this simple game. Part of the challenge was to create this game in the simplest way possible and I believe that I conquered that challenge by creating the whole game around a simple image that I downloaded from Google.
+I was able to grasp the concept of [Coroutines in Unity](https://docs.unity3d.com/Manual/Coroutines.html) by creating this simple game. 
+
+Part of the challenge was to create this game in the simplest way possible and I believe that I conquered that challenge by creating the whole game around a simple image that I downloaded from Google. By cropping out the lights on the simon board and a little bit of photoshop , I was able to mimick the lights turning on and off by just switching the images according to a random sequence that the game generates to simulate the light blinking on and then back off. This approach helped me spend less time on creating the board all alone and instead I spent more time turning the simple image into a game. The lights also blink on the board when the player clicks on them to repeat the sequence.
 
 The highest level I have been able to reach is level 6 , can you beat my highscore ?
