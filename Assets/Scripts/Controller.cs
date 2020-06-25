@@ -120,6 +120,7 @@ public class Controller : MonoBehaviour
 
                     if (names[i] == "")
                     {
+                        //the user would have won the game if the the next color in sequence is empty
                         wonGame = true;
                         i = 0;
                     }
